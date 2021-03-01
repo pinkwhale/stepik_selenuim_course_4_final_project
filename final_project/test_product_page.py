@@ -55,7 +55,6 @@ def test_guest_can_add_product_to_basket(browser, link):
     page.open()
     page.add_product_to_basket()
     page.solve_quiz_and_get_code()
-    #time.sleep(10)
     page.should_match_product_name()
     page.should_match_product_price()
 
